@@ -3,6 +3,12 @@ const currencies =  require('./Common-Currency');
 const searchCurrencyByValue = (req, res) => {
     const length = Object.keys(currencies).length;
     const query = req.query.value;
+    if(!query){
+        res.json({
+            message: 'Please provide the search value',
+            success : false
+        })
+    }
     const currencyKeys = Object.keys(currencies).filter(item => {
         const codeToUpperCase = (currencies[item].code).toUpperCase();
         const nameToUpperCase = (currencies[item].name).toUpperCase();
