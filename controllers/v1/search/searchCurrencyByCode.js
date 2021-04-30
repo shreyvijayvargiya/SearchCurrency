@@ -8,6 +8,7 @@ const searchCurrencyByCode = (req, res) => {
             message: 'Please add the currency code',
             success : false
         })
+        return
     }
     const currencyKeys = Object.keys(currencies).filter(item => {
         if(((currencies[item].code).toUpperCase()).includes(query.toUpperCase())){

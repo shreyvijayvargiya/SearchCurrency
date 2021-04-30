@@ -8,6 +8,7 @@ const searchCurrencyByValue = (req, res) => {
             message: 'Please provide the search value',
             success : false
         })
+        return
     }
     const currencyKeys = Object.keys(currencies).filter(item => {
         const codeToUpperCase = (currencies[item].code).toUpperCase();
@@ -23,7 +24,7 @@ const searchCurrencyByValue = (req, res) => {
     });
     res.json({
         success: true,
-        length: length,
+        length: filteredCurrencies.length,
         data: filteredCurrencies
     });
 };
