@@ -17,7 +17,6 @@
   },
   "scripts": {
     "server": "node server.js",
-    "build": "build",
     "start": "nodemon server.js"
   }
 }
