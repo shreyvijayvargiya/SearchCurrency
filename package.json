@@ -12,7 +12,8 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "server": "nodemon server.js",
-    "build": "build"
+    "server": "node server.js",
+    "build": "build",
+    "start": "nodemon server.js"
   }
 }
