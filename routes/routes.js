@@ -6,7 +6,11 @@ const searchCurrencyByCode = require('../controllers/v1/search/searchCurrencyByC
 const searchCurrencyByValue = require('../controllers/v1/search/searchCurrencyByValue');
 
 router.get('/', (req, res) => {
-    res.send('Welcome to basic express setup repository')
+    res.json({
+        developer: 'Shrey Vijayvargiya',
+        purpose: 'Search currency API',
+        application: 'Using the API you can simply search the API',
+    })
 });
 
 router.get('/api/v1/search-all-currencies', searchAllCurrencies);
