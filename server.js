@@ -13,4 +13,4 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(router);
 
 
-server.listen(process.end.PORT || 3001, () => console.log('Server is running on port 3000'));
+server.listen(process.env.PORT || 3001, () => console.log('Server is running on port 3000'));
