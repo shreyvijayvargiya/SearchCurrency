@@ -1,4 +1,5 @@
 const currencies =  require('./Common-Currency');
+const getFlagUrl = require('../../../utils/getFlagUrl');
 
 const searchCurrencyByName = (req, res) => {
     const length = Object.keys(currencies).length;
@@ -18,10 +19,16 @@ const searchCurrencyByName = (req, res) => {
     const filteredCurrencies = currencyKeys.map(item => {
         return currencies[item]
     });
+    const currenciesWithFlag = filteredCurrencies.map(item => {
+        return {
+            ...item,
+            flag: getFlagUrl((item.code).toLowerCase())
+        }
+    });
     res.json({
         success: true,
-        length: filteredCurrencies.length,
-        data: filteredCurrencies
+        length: currenciesWithFlag.length,
+        data: currenciesWithFlag
     });
 };
 
