@@ -1,4 +1,4 @@
-<h1>Currency API to search and filter the currencies around the world</h1>
+<h1>Search & Filter currency API</h1>
 
 <h3>References</h3>
 <p>Read the article for better understanding</p>
