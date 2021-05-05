@@ -2,8 +2,7 @@
 
 <h3>References</h3>
 <p>Read the article for better understanding</p>
-
-<a href="https://shreyvijayvargiya26.medium.com/the-perfect-endpoints-for-filtering-currencies-in-88945e6a81c7">Read Article</a>
+<a href="https://shreyvijayvargiya26.medium.com/the-perfect-endpoints-for-filtering-currencies-in-88945e6a81c7">Log to understand</a>
 
 <h3>How to run</h3>
  
